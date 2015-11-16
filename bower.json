@@ -1,0 +1,21 @@
+{
+  "name": "flappy-bird-landing",
+  "description": "flappy bird clone landing page",
+  "main": "bower.json",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "flappy",
+    "bird"
+  ],
+  "authors": [
+    "marcus eubanks"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  }
+}
