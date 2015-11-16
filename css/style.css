@@ -1,9 +1,10 @@
 body {
   background-color: #29b6f6;
   color: white;
+  font-family: 'Raleway', 'Arial', sans-serif;
 }
 .container {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Raleway', 'Arial', sans-serif;
   padding: 10px;
 }
 h1 {
@@ -28,7 +29,10 @@ section {
   text-align: center;
 }
 #intro {
-  margin: -10px 0px;
+  margin: -20px 0px;
+}
+#closing {
+  margin: 40px 0px;
 }
 #button {
   color: white;
@@ -88,6 +92,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.03);
   border-radius: 10px;
   vertical-align: middle;
+  margin: 0 auto;
+  width: 30%;
 }
 
 #social img {
