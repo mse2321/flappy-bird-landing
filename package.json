@@ -1,0 +1,27 @@
+{
+  "name": "flappy-bird-landing",
+  "version": "1.0.0",
+  "description": "Thinkful Clone Landing Page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mse2321/flappy-bird-landing.git"
+  },
+  "keywords": [
+    "flappy",
+    "bird",
+    "clone"
+  ],
+  "author": "Marcus Eubanks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mse2321/flappy-bird-landing/issues"
+  },
+  "homepage": "https://github.com/mse2321/flappy-bird-landing#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
