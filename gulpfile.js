@@ -14,3 +14,10 @@ var buffer = require('vinyl-buffer');
 gulp.task('default', function() {
   // place code for your default task here
 });
+
+// JavaScript linting task
+gulp.task('jshint', function() {
+  return gulp.src('site/js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
