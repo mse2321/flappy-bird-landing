@@ -28,3 +28,9 @@ gulp.task('sass', function() {
     .pipe(sass())
     .pipe(gulp.dest('site/files'));
 });
+
+// Watch Task
+gulp.task('watch', function() {
+  gulp.watch('site/files/*.js', ['jshint']);
+  gulp.watch('site/files/*.scss', ['sass']);
+});
