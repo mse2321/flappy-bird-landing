@@ -21,3 +21,10 @@ gulp.task('jshint', function() {
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
+
+//Transpiling Sass into CSS
+gulp.task('sass', function() {
+  return gulp.src('site/files/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('site/files'));
+});
