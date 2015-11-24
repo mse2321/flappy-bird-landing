@@ -13,6 +13,9 @@ var buffer = require('vinyl-buffer');
 
 gulp.task('default', ['jshint', 'sass', 'watch']);
 
+// Build task
+gulp.task('build', ['jshint', 'sass', 'html', 'scripts', 'styles', 'images']);
+
 // JavaScript linting task
 gulp.task('jshint', function() {
   return gulp.src('site/files/*.js')
@@ -48,4 +51,18 @@ gulp.task('scripts', function() {
     .pipe(buffer())
     .pipe(uglify())
     .pipe(gulp.dest('build/'));
+});
+
+// Styles build task, concatenates all the files
+gulp.task('styles', function() {
+  return gulp.src('site/files/*.css')
+    .pipe(concat('styles.css'))
+    .pipe(gulp.dest('build/'));
+});
+
+// Image optimization task
+gulp.task('images', function() {
+  return gulp.src('site/pics/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('build/pics'));
 });
