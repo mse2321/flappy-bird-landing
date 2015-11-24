@@ -11,9 +11,7 @@ var rename = require('gulp-rename');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 
-gulp.task('default', function() {
-  // place code for your default task here
-});
+gulp.task('default', ['jshint', 'sass', 'watch']);
 
 // JavaScript linting task
 gulp.task('jshint', function() {
@@ -33,4 +31,21 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
   gulp.watch('site/files/*.js', ['jshint']);
   gulp.watch('site/files/*.scss', ['sass']);
+});
+
+// Minify index
+gulp.task('html', function() {
+  return gulp.src('site/html/index.html')
+    .pipe(minifyHTML())
+    .pipe(gulp.dest('build/'));
+});
+
+// JavaScript build task, removes whitespace and concatenates all files
+gulp.task('scripts', function() {
+  return browserify('/site/files/main.js')
+    .bundle()
+    .pipe(source('app.js'))
+    .pipe(buffer())
+    .pipe(uglify())
+    .pipe(gulp.dest('build/'));
 });
