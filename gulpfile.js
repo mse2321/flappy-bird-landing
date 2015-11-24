@@ -17,7 +17,7 @@ gulp.task('default', function() {
 
 // JavaScript linting task
 gulp.task('jshint', function() {
-  return gulp.src('site/js/*.js')
+  return gulp.src('site/files/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
