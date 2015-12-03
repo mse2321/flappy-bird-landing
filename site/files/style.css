@@ -130,6 +130,15 @@ footer {
 
   #middle-column {
     margin-left: 0%;
-    margin-right: 0%; } }
+    margin-right: 0%; }
+
+  nav {
+    display: none; }
+
+  h1 {
+    line-height: 7em; }
+
+  img {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

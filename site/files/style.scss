@@ -16,6 +16,7 @@ $flappy-gold: #fdd835;
 $body-font: 'Raleway', 'Arial', sans-serif;
 $mobile: 'max-device-width: 736px';
 $tablet:  'max-device-width: 1024px';
+
 /* Styles */
 body {
   background-color: #29b6f6;
@@ -117,7 +118,9 @@ footer {
 #social img {
   padding: 0 20px 0px 20px;
 }
+
 @media ($mobile) {
+
   #button {
     width: 80%;
   }
@@ -145,4 +148,14 @@ footer {
     margin-left: 0%;
     margin-right: 0%;
   }
+  nav {
+    display: none;
+  }
+  h1 {
+    line-height: 7em;
+  }
+  img {
+    width: 100%;
+  }
+
 }
