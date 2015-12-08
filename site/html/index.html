@@ -81,7 +81,9 @@
 
             .fa-bars {display: block; margin-top: 10px; margin-right: -10px; font-size: 30px; margin-bottom: 10px;}
 
-            nav li {list-style-type: none; display: block; padding: 0 30px; font-weight: bold;}
+            nav li {list-style-type: none; display: block; padding: 10px 30px; font-weight: bold;}
+
+            nav li:hover {background-color: #fdd835; color: white;}
           }
 
           @media screen and (max-width: 1024px) {
@@ -105,7 +107,11 @@
 
             #nav-options {background-color: #666; padding: 10px; text-align: center; margin-top: -10px;}
 
-            nav li {list-style-type: none; display: block; padding: 0 30px; font-weight: bold;}
+            .fa-bars {display: block; margin-top: 10px; margin-right: -10px; font-size: 30px; margin-bottom: 10px;}
+
+            nav li {list-style-type: none; display: block; padding: 10px 30px; font-weight: bold;}
+
+            nav li:hover {background-color: #fdd835; color: white;}
           }
 
           @media screen and (max-width: 479px) {
@@ -115,7 +121,7 @@
 
             #nav-options {background-color: #666; padding: 10px; text-align: center; margin-top: -10px;}
 
-            nav {width: 100%; z-index: 9999; margin: 0 auto;}
+            nav {position: relative; width: 100%; z-index: 9999; margin: 0 auto; left: 0; right: 0;}
 
             #menu {display: inline-block; background-color: #0787fe; color: #fff; padding: 10px; width: 100%; text-align: center; border-radius: 5px;}
 
@@ -131,23 +137,25 @@
 
             .fa-bars {display: block; margin-top: 10px; margin-right: -10px; font-size: 30px; margin-bottom: 10px;}
 
-            nav li {list-style-type: none; display: block; padding: 0 30px; font-weight: bold;}
+            nav li {list-style-type: none; display: block; padding: 10px 30px; font-weight: bold;}
+
+            nav li:hover {background-color: #fdd835; color: white;}
           }
         </style>
     </head>
 	<body>
 		<div class="container">
 			<header>
-	      		<h1>FLAPPY BIRD</h1>    
-				<nav>
+          <nav>
             <i class="fa fa-bars"></i>
-				    <ul id="nav-options">
-				        <li><a href="index.html">Home</a></li>
-				        <li><a href="about.html">About</a></li>
-				        <li><a href="howto.html">How To</a></li>
-				        <li><a href="#">Score</a></li>
-				    <ul>
-				</nav>
+            <ul id="nav-options">
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="howto.html"><li>How To</li></a>
+                <a href="#"><li>Score</li></a>
+            <ul>
+          </nav>
+	      	<h1>FLAPPY BIRD</h1>    
 			</header>
 			<section id="intro">
 				<p class="content">Looking for gita one-in-a-kind gaming experience? Look no further!<br />Here's what you can expect from playing Flappy Bird:</p>
@@ -180,7 +188,8 @@
 				<p>&copy;2015 ME Innovation</p>
 			</footer>
 		</div>
-		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
-		<script defer src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+    <script src="../files/main.js"></script>
+		<!-- <script defer src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script> -->
 	</body>
 </html>
