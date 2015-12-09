@@ -20,15 +20,23 @@
 
           .container {font-family: "Raleway", "Arial", sans-serif; padding: 10px;}
 
-          h1 {font-size: 5em; color: #fdd835; text-align: center; font-family: "04b_19regular", Helvetica, Arial, sans-serif; line-height: 70px;}
+          .sub-container {width: 65%; display: inline-block;}
+
+          .sub-container-image {width: 25%; display: inline-block;}
+
+          h1 {font-size: 3em; color: #fdd835; font-family: "04b_19regular", Helvetica, Arial, sans-serif; line-height: 70px; margin-left: 30px; margin-top: 70px; letter-spacing: .07em;}
 
           nav {position: fixed; top: 10px; right: 40px;}
+
+          section {padding: 10px 30px; display: inline-block; vertical-align: top}
+
+          .articleImage {display: inline-block; vertical-align: top;}
+
+          .articleImage img {width: 400px; height: 400px; margin-left: 30px;}
 
           .fa-bars {display: none;}
 
           nav li {list-style-type: none; display: inline; padding: 0 30px; font-weight: bold;}
-
-          section {text-align: center;}
 
           .content {line-height: 1.5em; margin: 0 auto;}
 
@@ -127,7 +135,7 @@
 
             #middle-column {margin-left: 0%; margin-right: 0%;}
 
-            h1 {line-height: 1em; font-size: 4em;}
+            h1 {line-height: 1em; font-size: 3.5em; margin-top: 30px; letter-spacing: .07em;}
 
             #grid-column img {width: 100%; display: inline-block;}
 
@@ -140,49 +148,44 @@
             nav li {list-style-type: none; display: block; padding: 10px 30px; font-weight: bold;}
 
             nav li:hover {background-color: #fdd835; color: white;}
+
+            .sub-container {width: 100%; display: block;}
+
+            .sub-container-image {width: 100%; display: block;}
+
+            .articleImage img {width: 100%; height: 250px; margin: 0 auto;}
+
+            .articleImage {display: block;}
+
+            .content {width: 100%;}
           }
         </style>
     </head>
 	<body>
 		<div class="container">
 			<header>
-	      		<h1>About Flappy Bird</h1>    
-				<nav>
-					<div id="menu">Menu</div>
-				    <ul id="nav-options">
-				        <li><a href="index.html">Home</a></li>
-				        <li><a href="about.html">About</a></li>
-				        <li><a href="howto.html">How To</a></li>
-				        <li><a href="#">Score</a></li>
-				    <ul>
-				</nav>
-			</header>
-			<section id="intro">
-        <p class="content">Looking for gita one-in-a-kind gaming experience? Look no further!<br />Here's what you can expect from playing Flappy Bird:</p>
-      </section>
-      <section id="image-content">
-          <div class="grid-column">
-            <img src="../pics/animatedGif1.gif" alt="Animated Gif 1" />
-            <p>Awesome Gameplay</p>
-          </div>
-          <div class="grid-column" id="middle-column">
-            <img src="../pics/animatedGif2.gif" alt="Animated Gif 2" />
-            <p>Excellent Graphics</p>
-          </div>
-          <div class="grid-column">
-            <img src="../pics/animatedGif3.gif" alt="Animated Gif 3" />
-            <p>Great Experience</p>
+          <nav>
+            <i class="fa fa-bars"></i>
+            <ul id="nav-options">
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="howto.html"><li>How To</li></a>
+                <a href="#"><li>Score</li></a>
+            <ul>
+          </nav>
+          <h1>ABOUT FLAPPY BIRD</h1>    
+      </header>
+      <div class="sub-container-image">
+        <div class="articleImage">
+          <img src="#" alt="" />
         </div>
-      </section>
-      <section id="closing">
-        <p class="content">Do not miss your chance to place the game online that everyone has been talking about.</p>
-        <p class="content" id="call-to-action">GET STARTED TODAY!</p>
-      </section>
-      <section id="cta">
-        <a href="#">
-            <div id="button">PLAY NOW</div>
-        </a>
-      </section>
+      </div>
+      <div class="sub-container">
+  			<section>
+          <p class="content">Nunc pulvinar augue nibh, ut finibus arcu ullamcorper a. Quisque mollis sapien sed nibh sodales aliquet. Nam tincidunt auctor laoreet. In sed pellentesque sapien. Duis placerat lorem at sem vestibulum tincidunt. Integer fringilla, nibh sit amet elementum tincidunt, justo risus rutrum libero, quis maximus justo elit a magna. Donec porta gravida dictum. Phasellus sit amet vulputate nisi, nec porta sem.</p>
+          <p class="content">Vestibulum tincidunt, felis a pellentesque egestas, dui ipsum tincidunt leo, et maximus lectus quam vel neque. Duis sit amet enim consequat, porta nulla ac, feugiat mauris. Nullam dignissim molestie lectus, ac malesuada magna malesuada id. Curabitur convallis risus eros, id fringilla quam blandit in. Donec metus neque, vehicula ac nulla at, vehicula rutrum elit. Nulla nisi quam, convallis sed commodo ut, sagittis eget magna. Nam eleifend volutpat massa. Etiam eu enim nec lacus pellentesque cursus ut at ipsum.</p>
+        </section>
+      </div>
 			<footer>
         <div id="social"><a href="#"><img id="facebook" src="../pics/social_facebook-icon.png" alt="Facebook" /></a><a href="#"><img id="twitter" src="../pics/social_twitter-icon.png" alt="Twiiter" /></a><a href="#"><img id="google-plus" src="../pics/social_google-plus-icon.png" alt="Google Plus" /></a></div>
         <p>&copy;2015 ME Innovation</p>

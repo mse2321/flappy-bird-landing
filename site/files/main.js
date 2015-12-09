@@ -7,6 +7,6 @@ $( document ).ready(function() {
 
 	$("#button").velocity({
     	backgroundColor: "#00ce00"
-	}, 3000);
+	}, { loop: true }, "slow");
 
 });
