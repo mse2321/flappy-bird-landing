@@ -1,3 +1,7 @@
+	if ( $(window).width() < 1024) {
+		$("#nav-options").hide();
+	}
+
 $( document ).ready(function() {
 	"use strict";
 
@@ -7,6 +11,6 @@ $( document ).ready(function() {
 
 	$("#button").velocity({
     	backgroundColor: "#00ce00"
-	}, 3000);
+	}, {loop: true}, 3000);
 
 });
