@@ -11,10 +11,6 @@ $( document ).ready(function() {
 
 	$("#button").velocity({
     	backgroundColor: "#00ce00"
-<<<<<<< HEAD
 	}, {loop: true}, "slow");
-=======
-	}, { loop: true }, "slow");
->>>>>>> c5410fc84682b466d3275f0a38c98a6bdd04f83f
 
 });
